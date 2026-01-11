@@ -8,4 +8,5 @@ import { Component } from '@angular/core';
 })
 export class Rooms  {
   hotelName = 'Hilton Hotel';
+  numberOfRooms = 10;
 }

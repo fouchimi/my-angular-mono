@@ -4,3 +4,12 @@ h2 {
     padding: 10px;
     margin: 20px;
 }
+
+div {
+    border: 1px solid gray;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    font-size: 30px;
+    color: black;
+}
