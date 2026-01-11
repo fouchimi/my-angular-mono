@@ -5,7 +5,10 @@
     <div class="second" [innerText]="numberOfRooms"></div>
 </div>
 }
-@if (rooms.availableRooms > 5) {
+
+{{ rooms.availableRooms ?? 'No rooms'}}
+
+@if (rooms.availableRooms && rooms.availableRooms > 5) {
     <div>Room List</div>
 }
 <div class="button-container">
