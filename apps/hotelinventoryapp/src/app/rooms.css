@@ -5,11 +5,30 @@ h2 {
     margin: 20px;
 }
 
-div {
+.container {
     border: 1px solid gray;
-    padding: 20px;
-    margin: 20px;
-    text-align: center;
     font-size: 30px;
-    color: black;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.first, .second {
+    flex: 1;
+    padding: 15px;
+}
+
+.button-container {
+    border: 1px solid grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin:  10px;
+}
+
+button {
+    font-size: 25px;
+    padding: 5px;
+    margin: 5px;
 }

@@ -12,7 +12,6 @@ export class Rooms  {
   toggleRooms = false;
 
   toggle() {
-    console.log(this.toggleRooms);
     this.toggleRooms = !this.toggleRooms;
   }
 }
