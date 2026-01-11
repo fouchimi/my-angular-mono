@@ -1,8 +1,13 @@
 <h2>Welcome to {{hotelName}} </h2>
-<div [hidden]="toggleRooms" class="container">
-    <div class="first" [hidden]="toggleRooms">Number of rooms:</div>
-    <div class="second" [hidden]="toggleRooms" [innerText]="numberOfRooms"></div>
+@if (toggleRooms) {
+    <div [hidden]="toggleRooms" class="container">
+    <div class="first">Number of rooms:</div>
+    <div class="second" [innerText]="numberOfRooms"></div>
 </div>
+}
+@if (rooms.availableRooms > 5) {
+    <div>Room List</div>
+}
 <div class="button-container">
     <button (click)="toggle()">Toggle</button>
 </div>
