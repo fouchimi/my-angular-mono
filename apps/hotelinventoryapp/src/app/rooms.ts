@@ -9,4 +9,10 @@ import { Component } from '@angular/core';
 export class Rooms  {
   hotelName = 'Hilton Hotel';
   numberOfRooms = 10;
+  toggleRooms = false;
+
+  toggle() {
+    console.log(this.toggleRooms);
+    this.toggleRooms = !this.toggleRooms;
+  }
 }
