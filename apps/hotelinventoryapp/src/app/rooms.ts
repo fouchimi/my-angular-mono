@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { IRooms, RoomList } from './i-rooms';
 
 @Component({
   selector: 'hotel-inventory-app-rooms',
+  imports: [CommonModule],
   templateUrl: './rooms.html',
   styleUrl: './rooms.css'
 })

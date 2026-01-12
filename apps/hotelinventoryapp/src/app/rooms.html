@@ -22,9 +22,9 @@
         <tr [class.even]="$index % 2 === 0" [class.odd]="$index % 2 !== 0">
             <td>{{room.roomId}}</td>
             <td>{{room.roomType}}</td>
-            <td>{{room.amenities}}</td>
-            <td>{{room.price}}</td>
-            <td>{{room.checkingTime}}</td>
+            <td>{{room.amenities | titlecase }}</td>
+            <td>{{room.price | currency}}</td>
+            <td>{{room.checkingTime | date:'short'}}</td>
         </tr>
     }
     </table>
