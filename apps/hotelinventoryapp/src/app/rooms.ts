@@ -30,7 +30,8 @@ export class Rooms  {
     price: 500,
     photo: '',
     checkingTime: new Date('12-Jan-2026'),
-    checkoutTime: new Date('16-Jan-2026')
+    checkoutTime: new Date('16-Jan-2026'),
+    ratings: 3.5
   }, 
   {
     roomId: 2,
@@ -39,7 +40,8 @@ export class Rooms  {
     price: 2000,
     photo: '',
     checkingTime: new Date('12-Jan-2026'),
-    checkoutTime: new Date('16-Jan-2026')
+    checkoutTime: new Date('16-Jan-2026'),
+    ratings: 4.2
   },
   {
     roomId: 3,
@@ -48,7 +50,8 @@ export class Rooms  {
     price: 3000,
     photo: '',
     checkingTime: new Date('12-Jan-2026'),
-    checkoutTime: new Date('16-Jan-2026')
+    checkoutTime: new Date('16-Jan-2026'),
+    ratings: 4.5
   }
 ]
 }
