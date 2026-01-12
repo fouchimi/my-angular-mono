@@ -10,11 +10,24 @@
 
 @if (rooms.availableRooms && rooms.availableRooms > 5) {
     <div>Room List</div>
-    @for (room of roomList; track $index) {
-        <p>Room Type: {{room.roomType}}</p>
-        <p>Amenities: {{room.ameniites}}</p>
-        <p>Price: {{room.price}}</p>
+    <table>
+        <tr>
+            <th>Room Id</th>
+            <th>Room Type</th>
+            <th>Amenities</th>
+            <th>Room Price</th>
+            <th>Checkin Time</th>
+        </tr>
+    @for (room of roomList; track $index;) {
+        <tr [class.even]="$index % 2 === 0" [class.odd]="$index % 2 !== 0">
+            <td>{{room.roomId}}</td>
+            <td>{{room.roomType}}</td>
+            <td>{{room.amenities}}</td>
+            <td>{{room.price}}</td>
+            <td>{{room.checkingTime}}</td>
+        </tr>
     }
+    </table>
 }
 <div class="button-container">
     <button (click)="toggle()">Toggle</button>

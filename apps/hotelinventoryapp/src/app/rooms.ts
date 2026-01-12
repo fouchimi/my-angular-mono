@@ -4,7 +4,7 @@ import { IRooms, RoomList } from './i-rooms';
 @Component({
   selector: 'hotel-inventory-app-rooms',
   templateUrl: './rooms.html',
-  styleUrl: './rooms.css',
+  styleUrl: './rooms.css'
 })
 export class Rooms  {
   hotelName = 'Hilton Hotel';
@@ -24,7 +24,7 @@ export class Rooms  {
   roomList: RoomList[] = [{
     roomId: 1,
     roomType: 'Deluxe Room',
-    ameniites: 'Air Conditioner, Free Wifi, TV, Bathroom, Kitchen',
+    amenities: 'Air Conditioner, Free Wifi, TV, Bathroom, Kitchen',
     price: 500,
     photo: '',
     checkingTime: new Date('12-Jan-2026'),
@@ -33,7 +33,7 @@ export class Rooms  {
   {
     roomId: 2,
     roomType: 'Deluxe Room Top Tier',
-    ameniites: 'Air Conditioner, Free Wifi, TV, Bathroom, Kitchen',
+    amenities: 'Air Conditioner, Free Wifi, TV, Bathroom, Kitchen',
     price: 2000,
     photo: '',
     checkingTime: new Date('12-Jan-2026'),
@@ -42,7 +42,7 @@ export class Rooms  {
   {
     roomId: 3,
     roomType: 'Private Suite',
-    ameniites: 'Air Conditioner, Free Wifi, TV, Bathroom, Kitchen',
+    amenities: 'Air Conditioner, Free Wifi, TV, Bathroom, Kitchen',
     price: 3000,
     photo: '',
     checkingTime: new Date('12-Jan-2026'),
