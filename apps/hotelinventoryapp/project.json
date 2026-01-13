@@ -20,7 +20,10 @@
             "input": "apps/hotelinventoryapp/public"
           }
         ],
-        "styles": ["apps/hotelinventoryapp/src/styles.scss"]
+        "styles": [
+          "apps/hotelinventoryapp/src/styles.scss", 
+          "node_modules/bootstrap/dist/css/bootstrap.min.css"],
+        "polyfills": ["@angular/localize/init"]
       },
       "configurations": {
         "production": {
